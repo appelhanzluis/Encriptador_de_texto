@@ -177,21 +177,21 @@ h2{
     }
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 375px){
     .ingresar-texto, .caja-mensaje{
-        width: 425px;
+        width: 360px;
     }
     .botones{
-        width: 425px;
+        width: 360px;
     }
     .boton-encriptar, .boton-desencriptar{
-        margin-left: 50px;
+        margin-left: 20px;
         margin-top: 10px;
     }
     .mensaje{
-        margin-left:32px;
+        margin-left:10px;
     }
     .boton-copiar{
-        margin-left: 50px;
+        margin-left: 16px;
     }
 }
