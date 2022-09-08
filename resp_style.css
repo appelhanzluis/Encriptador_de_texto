@@ -154,13 +154,12 @@ h2{
     width: 100%;
     color: #ffffff;
     background: #0A3871;
-    font-weight: lighter;
     padding:20px;
     text-align: center;
 }
 
 @media screen and (max-width: 1255px){
-    .row{
+    .row, .footer{
         flex-direction: column;
     }
     .caja-mensaje{
@@ -177,9 +176,22 @@ h2{
         width:auto;
     }
 }
-@media  screen and(max-width:750px){
-    .footer{
-        width:680px;
+
+@media screen and (max-width: 450px){
+    .ingresar-texto, .caja-mensaje{
+        width: 425px;
+    }
+    .botones{
+        width: 425px;
+    }
+    .boton-encriptar, .boton-desencriptar{
+        margin-left: 50px;
+        margin-top: 10px;
+    }
+    .mensaje{
+        margin-left:32px;
+    }
+    .boton-copiar{
+        margin-left: 50px;
     }
 }
-
