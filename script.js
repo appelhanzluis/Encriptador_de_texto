@@ -42,3 +42,40 @@ function copiar() {
     mensaje.value = "";
     alert("Copiaste el texto :)");
 }
+
+//Animaciones
+const info = document.querySelector(".info");
+info.classList.add('animate__animated', 'animate__flash');
+info.style.setProperty('--animate-duration', '5s');
+
+const logo = document.querySelector(".logo-alura");
+logo.classList.add('animate__animated', 'animate__fadeInUp');
+logo.style.setProperty('--animate-duration', '2s');
+
+const section1 = document.querySelector(".section-1");
+section1.classList.add('animate__animated', 'animate__fadeIn');
+section1.style.setProperty('--animate-duration', '3s');
+
+const section2 = document.querySelector(".section-2");
+section2.classList.add('animate__animated', 'animate__fadeIn');
+section2.style.setProperty('--animate-duration', '3s');
+
+const footer = document.querySelector(".footer");
+footer.classList.add('animate__animated', 'animate__slideInRight');
+footer.style.setProperty('--animate-duration', '2s');
+
+const botonNightMode = document.querySelector(".boton-night-mode");
+botonNightMode.classList.add('animate__animated', 'animate__fadeIn');
+botonNightMode.style.setProperty('--animate-duration','3s');
+
+//Night-Mode
+function nightMode(){
+    const fondo = document.body;
+    fondo.classList.toggle("night-mode");
+    const ingresarTexto = document.querySelector(".ingresar-texto");
+    ingresarTexto.classList.toggle("night-mode-ingresar-texto");
+    const cajaMensaje = document.querySelector(".caja-mensaje");
+    cajaMensaje.classList.toggle("night-mode-mensaje");
+    const footer = document.querySelector(".footer");
+    footer.classList.toggle("night-mode-footer");
+}

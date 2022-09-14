@@ -4,17 +4,37 @@
     font-family: 'Roboto Mono', monospace;
 }
 body{
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     background: linear-gradient(to right, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-attachment: fixed;
 }
 
+.header{
+    width: auto;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.boton-night-mode{
+    width:100px;
+    height: 50px;
+    margin-top: 40px;
+    margin-right: 40px;
+    border-style: none;
+    border-radius: 32px;
+    background: #ffffff;
+    
+}
+.boton-night-mode:hover{
+    box-shadow:  -2px -2px 11px #f7f7f7,
+                2px 2px 11px #ffffff;
+}
+
 #logo-1{
     padding: 0px;
     width: 120px;
-    height: 48px;
+    height: 50px;
     margin-left: 40px;
     margin-top: 40px;
 }
@@ -23,6 +43,7 @@ body{
     filter: saturate(180%);
     transform: scale(1.2);
     transition:all .5s ease-in-out;
+    
 }
 
 .row{
@@ -47,7 +68,12 @@ h2{
     border-radius: 32px;
     outline: none;
 }
+.ingresar-texto:hover{
+    box-shadow:  -2px -2px 11px #f7f7f7,
+    2px 2px 11px #ffffff;
+}
 .info{
+    height: 20px;
     margin-left: 32px;
     font-size: 20px;
     line-height: 18px;  
@@ -55,7 +81,9 @@ h2{
     text-align: left; 
     color: #495057; 
     opacity: 0.8;
-
+}
+.info:hover{
+    color:#0b5bbe;
 }
 .botones{
     width: 680px;
@@ -74,8 +102,10 @@ h2{
 .boton-encriptar:hover{
     text-decoration: 2px underline;
     filter: saturate(180%);
-    transition:all .3s ease-in-out;
+    transition:all .1s ease-in-out;
     font-weight: 600;
+    box-shadow: -2px -2px 11px #f7f7f7,
+                2px 2px 11px #ffffff;
 }
 
 .boton-desencriptar{
@@ -86,14 +116,17 @@ h2{
     border: 1px solid #0A3871;
     border-radius: 24px;
     padding: 24px;
+
 }
 
 .boton-desencriptar:hover{
     background: #ffffff;
     text-decoration: 2px underline;
     filter: saturate(180%);
-    transition:all .3s ease-in-out;
+    transition:all .1s ease-in-out;
     font-weight: 600;
+    box-shadow:  -2px -2px 11px #f7f7f7,
+                2px 2px 11px #ffffff;
 
 }
 
@@ -102,7 +135,6 @@ h2{
     height: 944px;
     padding: 20px;
     margin-top: 40px;
-   
 }
 
 .caja-mensaje{
@@ -112,6 +144,7 @@ h2{
     box-shadow:  -5px -5px 11px #f7f7f7,
                 5px 5px 11px #ffffff;
 }
+
 .mensaje{
     margin-top: 243px;
     margin-left: 32px;
@@ -130,6 +163,8 @@ h2{
 .mensaje:hover{
     filter: saturate(180%);
     transition:all .3s ease-in-out;
+    box-shadow:  -2px -2px 11px #f7f7f7,
+                2px 2px 11px #ffffff;
 }
 
 .boton-copiar{
@@ -147,7 +182,10 @@ h2{
 .boton-copiar:hover{
     text-decoration: 2px underline;
     filter: saturate(180%);
-    transition:all .3s ease-in-out;
+    transition:all .1s ease-in-out;
+    font-weight: 600;
+    box-shadow:  -2px -2px 11px #f7f7f7,
+                2px 2px 11px #ffffff;
 }
 
 .footer{
@@ -158,6 +196,20 @@ h2{
     text-align: center;
 }
 
+/* Modo Nocturno*/
+.night-mode{
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-attachment: fixed;
+    color: white;
+}
+
+.night-mode-ingresar-texto, .night-mode-mensaje, .night-mode-footer{
+    background: linear-gradient(to top, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+
+}
+
+/*Media Querys*/
 @media screen and (max-width: 1255px){
     .row, .footer{
         flex-direction: column;

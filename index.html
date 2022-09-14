@@ -8,16 +8,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Encriptador de texto</title>
 </head>
 <body>
     <header class="header">
-        <img id="logo-1" src="./images/Logo-1.png" alt="Logo de Alura">
+        <a href="https://app.aluracursos.com/"><img id="logo-1" class="logo-alura" src="./images/Logo-1.png" alt="Logo de Alura"></a>
+        <button class= "boton-night-mode" onclick="nightMode()">&#128161</button>
     </header>
     <main class="row">
         <section class="section-1">
             <h2>Ingrese el texto:</h2>
-            <textarea class="ingresar-texto" cols="40" rows="12" required placeholder="Ingresa el texto que desees ">
+            <textarea class="ingresar-texto" cols="40" rows="12" required placeholder="Ingresa el texto que desees encriptar o desencriptar">
             </textarea>
             <div class="botones">
                 <p class="info"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
