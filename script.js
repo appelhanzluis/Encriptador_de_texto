@@ -78,4 +78,6 @@ function nightMode(){
     cajaMensaje.classList.toggle("night-mode-mensaje");
     const footer = document.querySelector(".footer");
     footer.classList.toggle("night-mode-footer");
+    const info = document.querySelector(".info");
+    info.classList.toggle("night-mode-info");
 }
