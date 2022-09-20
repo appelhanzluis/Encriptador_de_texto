@@ -40,7 +40,12 @@ function copiar() {
     mensaje.select();
     navigator.clipboard.writeText(mensaje.value);
     mensaje.value = "";
-    swal("Bien Hecho!", "Copiaste el texto!", "success");
+    Swal.fire({
+        title: 'Bien Hecho!',
+        text: 'Copiaste el texto!',
+        icon: 'success',
+        confirmButtonText: 'ok',
+      })
 }
 
 //Animaciones
