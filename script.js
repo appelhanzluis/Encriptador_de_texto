@@ -40,7 +40,7 @@ function copiar() {
     mensaje.select();
     navigator.clipboard.writeText(mensaje.value);
     mensaje.value = "";
-    alert("Copiaste el texto :)");
+    swal("Bien Hecho!", "Copiaste el texto!", "success");
 }
 
 //Animaciones
