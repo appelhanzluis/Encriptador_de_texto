@@ -4,12 +4,10 @@
     font-family: 'Roboto Mono', monospace;
 }
 body{
-    width: auto;
-    height: auto;
-    margin: 0;
-    padding: 0;
     background: linear-gradient(to right, #FFFDE4, #005AA7);
     background-attachment: fixed;
+    margin: 0;
+    padding: 0;
 }
 
 .encabezado{ 
@@ -231,21 +229,21 @@ body{
         width: auto;
     }
     .ingresar-texto, .caja-mensaje{
-        width: 400px;
+        width: 360px;
     }
     .section-1{
         padding: 10px;
     }
-    .boton-encriptar, .boton-desencriptar{
-        width: 400px;
+    .info, .boton-encriptar, .boton-desencriptar{
+        width: 360px;
         margin-top: 10px;
         margin-left:0;
     }   
     .mensaje{
-        margin-left: 42px;
+        margin-left: 12px;
     }
     .boton-copiar{
-        margin-left: 45px;
+        margin-left: 16px;
     }
 }
 /******************Portatil L********************/
