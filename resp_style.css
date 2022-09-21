@@ -223,21 +223,21 @@ body{
 
 
 /******************Movil L******************/
-@media (max-width:480px){
+@media screen and (max-width:425px){
     .row{
         flex-direction: column;
     }
     .encabezado, .section-1, .section-2, .botones, .footer{
-        width: 100%;
+        width: auto;
     }
     .ingresar-texto, .caja-mensaje{
-        width: 420px;
+        width: 400px;
     }
     .section-1{
         padding: 10px;
     }
     .boton-encriptar, .boton-desencriptar{
-        width: 420px;
+        width: 400px;
         margin-top: 10px;
         margin-left:0;
     }   
