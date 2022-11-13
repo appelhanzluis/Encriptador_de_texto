@@ -10,13 +10,15 @@ function btnEncriptar(){
 
 function encriptar(stringEncriptada) {
     let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a","ai"], ["o","ober"], ["u","ufat"]];
-    stringEncriptada = stringEncriptada.toLowerCase();
+    stringEncriptada = stringEncriptada.trim().toLowerCase();
     for( let i = 0; i < matrizCodigo.length; i++){
         if(stringEncriptada.includes(matrizCodigo[i][0])){
             stringEncriptada = stringEncriptada.replaceAll(matrizCodigo[i][0],matrizCodigo[i][1]);
-        }         
+        }
+        alertEncriptar();   
     }
     return stringEncriptada;
+    
 }
 
 function btnDesencriptar(){
@@ -31,7 +33,8 @@ function desencriptar(stringDesencriptada) {
     for( let i = 0; i < matrizCodigo.length; i++){
         if(stringDesencriptada.includes(matrizCodigo[i][1])){
             stringDesencriptada = stringDesencriptada.replaceAll(matrizCodigo[i][1],matrizCodigo[i][0]);
-        }         
+        }
+        alertDesencriptar();     
     }
     return stringDesencriptada;
 }
@@ -40,12 +43,7 @@ function copiar() {
     mensaje.select();
     navigator.clipboard.writeText(mensaje.value);
     mensaje.value = "";
-    Swal.fire({
-        title: 'Bien Hecho!',
-        text: 'Copiaste el texto!',
-        icon: 'success',
-        confirmButtonText: 'ok',
-      })
+    alertCopiar();
 }
 
 //Animaciones
