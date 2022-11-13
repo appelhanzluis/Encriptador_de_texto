@@ -12,12 +12,14 @@
     background: #ffffff;
     box-shadow:  -5px -5px 11px #f7f7f7,
                 5px 5px 11px #ffffff;
+    margin-left: 2px;
 }
 .titulo__mensaje{
     font-size: 2rem;
     font-weight: 700;
-    margin-left: 0px;
     margin-bottom: 5px;
+    margin-left: 2px;
+
 }
 
 .mensaje{
@@ -34,6 +36,7 @@
     background-repeat: no-repeat;
     background-position: center;
     outline: none;
+    margin-left: 8px;
 }
 .mensaje:hover{
     filter: saturate(180%);
@@ -47,7 +50,6 @@
     font-weight: 400;
     width: 320px;
     height: 67px;
-    margin-left: 0px;
     margin-top: 10px;
     color: white;
     background: #0A3871;

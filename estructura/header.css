@@ -35,19 +35,19 @@
 /***************DESKTOP*******************/
 @media screen and (min-width: 1024px) {
     .header__logo{
-        margin-left: 50px;
+        margin-left: 35px;
     }
     .boton__night__mode{
-        margin-right: 50px;   
+        margin-right: 65px;   
     }
 }
 
 /***************DESKTOP-L*******************/
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
     .header__logo{
-        margin-left: 100px;
+        margin-left: 80px;
     }
     .boton__night__mode{
-        margin-right: 100px;   
+        margin-right: 70px;   
     }
 }
