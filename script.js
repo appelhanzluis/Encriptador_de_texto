@@ -1,4 +1,4 @@
-const ingresarTexto = document.querySelector(".ingresar-texto");
+const ingresarTexto = document.querySelector(".ingresar__texto");
 const mensaje = document.querySelector(".mensaje");
 
 function btnEncriptar(){
@@ -53,15 +53,15 @@ const info = document.querySelector(".info");
 info.classList.add('animate__animated', 'animate__flash');
 info.style.setProperty('--animate-duration', '5s');
 
-const logo = document.querySelector(".logo-alura");
+const logo = document.querySelector(".header__logo");
 logo.classList.add('animate__animated', 'animate__fadeInUp');
 logo.style.setProperty('--animate-duration', '2s');
 
-const section1 = document.querySelector(".section-1");
+const section1 = document.querySelector(".section__1");
 section1.classList.add('animate__animated', 'animate__fadeIn');
 section1.style.setProperty('--animate-duration', '3s');
 
-const section2 = document.querySelector(".section-2");
+const section2 = document.querySelector(".section__2");
 section2.classList.add('animate__animated', 'animate__fadeIn');
 section2.style.setProperty('--animate-duration', '3s');
 
@@ -69,20 +69,20 @@ const footer = document.querySelector(".footer");
 footer.classList.add('animate__animated', 'animate__slideInRight');
 footer.style.setProperty('--animate-duration', '2s');
 
-const botonNightMode = document.querySelector(".boton-night-mode");
+const botonNightMode = document.querySelector(".boton__night__mode");
 botonNightMode.classList.add('animate__animated', 'animate__fadeIn');
 botonNightMode.style.setProperty('--animate-duration','3s');
 
 //Night-Mode
 function nightMode(){
     const fondo = document.body;
-    fondo.classList.toggle("night-mode");
-    const ingresarTexto = document.querySelector(".ingresar-texto");
-    ingresarTexto.classList.toggle("night-mode-ingresar-texto");
-    const cajaMensaje = document.querySelector(".caja-mensaje");
-    cajaMensaje.classList.toggle("night-mode-mensaje");
+    fondo.classList.toggle("night__mode");
+    const ingresarTexto = document.querySelector(".ingresar__texto");
+    ingresarTexto.classList.toggle("night__mode__ingresar__texto");
+    const cajaMensaje = document.querySelector(".caja__mensaje");
+    cajaMensaje.classList.toggle("night__mode__mensaje");
     const footer = document.querySelector(".footer");
-    footer.classList.toggle("night-mode-footer");
+    footer.classList.toggle("night__mode__footer");
     const info = document.querySelector(".info");
-    info.classList.toggle("night-mode-info");
+    info.classList.toggle("night__mode__info");
 }

@@ -1,0 +1,53 @@
+.header{ 
+    display: flex;
+    height: 100px;   
+    justify-content: space-between;
+}
+
+.header__logo{
+    padding: 0px;
+    width: 120px;
+    height: 50px;
+    margin-top: 40px;
+}
+
+.header__logo:hover{
+    filter: saturate(180%);
+    transform: scale(1.2);
+    transition:all .5s ease-in-out;
+}
+
+.boton__night__mode{
+    width:100px;
+    height: 50px;
+    margin-top: 40px;
+    margin-right: 20px;
+    border-style: none;
+    border-radius: 32px;
+    background: #ffffff;
+    
+}
+.boton__night__mode:hover{
+    box-shadow: -2px -2px 11px #f7f7f7,
+                2px 2px 11px #ffffff;
+}
+
+/***************DESKTOP*******************/
+@media screen and (min-width: 1024px) {
+    .header__logo{
+        margin-left: 50px;
+    }
+    .boton__night__mode{
+        margin-right: 50px;   
+    }
+}
+
+/***************DESKTOP-L*******************/
+@media screen and (min-width: 1200px) {
+    .header__logo{
+        margin-left: 100px;
+    }
+    .boton__night__mode{
+        margin-right: 100px;   
+    }
+}

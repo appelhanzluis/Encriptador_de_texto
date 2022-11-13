@@ -1,0 +1,10 @@
+:root{ 
+    /*Fuentes*/
+    --roboto:'Roboto Mono', monospace;
+}
+
+body{
+    font-family: var(--roboto);
+    background: linear-gradient(to right, #FFFDE4, #005AA7);
+    background-attachment: fixed;
+}

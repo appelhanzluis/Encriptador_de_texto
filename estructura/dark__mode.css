@@ -1,0 +1,16 @@
+/* Modo Nocturno*/
+.night__mode{
+    background: -webkit-linear-gradient(to left, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-attachment: fixed;
+    color: white;
+}
+
+.night__mode__ingresar__texto, .night__mode__mensaje, .night__mode__footer{
+    background: linear-gradient(to top, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+
+}
+.night__mode__info{
+    color: white;
+}
