@@ -1,0 +1,152 @@
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.section__1{
+    height: fit-content;
+    padding: 20px;
+    margin-top: 40px;
+}
+.titulo__ingrese{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    margin-left: 2px;
+}
+.ingresar__texto{
+    width: 340px;
+    height: 200px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 30px;
+    padding-top: 20px;
+    border-style: none;
+    border-radius: 32px;
+    outline: none;
+    margin-left: 2px;
+}
+.ingresar__texto:hover{
+    box-shadow:  -2px -2px 11px #f7f7f7,
+    2px 2px 11px #ffffff;
+}
+.info{
+    font-size: 0.8rem;
+    font-weight: 400; 
+    letter-spacing: 0em;
+    color: #495057; 
+    opacity: 0.8;
+    margin-left: 2px;
+}
+.info:hover{
+    color:#0b5bbe;
+    filter: saturate(180%);
+}
+.botones{
+    width: fit-content;
+    display: flex;
+    gap: 5px;
+    margin-left: 2px;
+}
+
+.boton__encriptar{
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    width: 165px;
+    height: 67px;
+    background: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    padding: 24px;
+}
+.boton__encriptar:hover{
+    text-decoration: 2px underline;
+    filter: saturate(180%);
+    transition:all .1s ease-in-out;
+    font-weight: 700;
+    box-shadow: -2px -2px 11px #f7f7f7,
+                2px 2px 11px #ffffff;
+}
+
+.boton__desencriptar{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #0A3871;
+    width: 165px;
+    height: 67px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    padding: 24px;
+}
+
+.boton__desencriptar:hover{
+    background: #ffffff;
+    text-decoration: 2px underline;
+    filter: saturate(180%);
+    transition:all .1s ease-in-out;
+    font-weight: 700;
+    box-shadow: -2px -2px 11px #f7f7f7,
+                2px 2px 11px #ffffff;
+
+}
+
+/***************DESKTOP*******************/
+@media screen and (min-width: 1024px) {
+    .row{
+        justify-content: space-between;
+    }
+    .titulo__ingrese{
+        margin-left: 50px;
+    }
+    .ingresar__texto{
+        width: 420px;
+        height: 318px;
+        margin-left: 50px;
+    }
+    .info{
+        font-size: 1rem;
+        margin-left: 50px;
+    }
+    .botones{
+        margin-left: 50px;
+        gap: 20px;
+    }
+    .boton__encriptar{
+        width: 200px;
+        height: 67px;
+    }
+    .boton__desencriptar{
+        width: 200px;
+        height: 67px;
+    }
+}
+/***************DESKTOP-L*******************/
+@media screen and (min-width: 1200px) {
+    .titulo__ingrese{
+        margin-left: 100px;
+    }
+    .ingresar__texto{
+        margin-left: 100px;
+        width: 600px;
+        height: 318px;
+    }
+    .info{
+        font-size: 1.2rem;
+        margin-left: 100px;
+    }
+    .botones{
+        margin-left: 100px;
+        gap: 5px;
+    }
+    .boton__encriptar{
+        font-size: 1.3rem;
+        width: 300px;
+    }
+    .boton__desencriptar{
+        font-size: 1.3rem;
+        width: 300px;
+    }
+}
